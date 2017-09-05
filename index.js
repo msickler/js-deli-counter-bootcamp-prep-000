@@ -5,11 +5,11 @@ function takeANumber(katzDeliLine, name) {
   return (`Welcome, ${name}. You are number ${katzDeliLine.length} in line.`);
 }
 
-function nowServing(katzDeli) {
+function nowServing(katzDeliLine) {
   var currentlyServing = katzDeliLine[0];
   katzDeliLine.shift()
   if (katzDeliLine > 0) {
-    return `Currently serving ` +currentlyServing +`.`
+    return `Currently serving ` + currentlyServing +`.`
   } else {
       return "There is nobody waiting to be served!"
   }
